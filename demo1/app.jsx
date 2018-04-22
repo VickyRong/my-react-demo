@@ -1,4 +1,3 @@
-
 function fullName(res){
   return res.firstName  + ' ' + res.lastName;
 }

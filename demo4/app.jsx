@@ -2,17 +2,17 @@ class Toggle extends React.Component{
   constructor(props){
     super(props)
     this.state = { isToggle : true }
-    // this.handleClick = this.handleClick.bind(this) //为什么要绑定？
+    // this.handleClick = this.handleClick.bind(this) //为什么要绑定？==>传递this
   }
-  handleClick(){
-    console.log('this is',this);
-    // this.setState( (prevState) => ({
-    //   isToggle : !prevState.isToggle
-    // }))
-  }
+  // handleClick(){
+  //   console.log('this is',this);
+  //   this.setState( (prevState) => ({
+  //     isToggle : !prevState.isToggle
+  //   }))
+  // }
 
-  handleClick = () => {  //属性初始化器语法? 不理解
-    // console.log('this is',this);
+  handleClick = () => {  //属性初始化器语法 ==> 传递this
+    console.log('this is',this);
     this.setState( (prevState) => ({
       isToggle : !prevState.isToggle
     }))

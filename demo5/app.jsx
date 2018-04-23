@@ -7,7 +7,7 @@ function GuestGreeting(props){
 
 function LoginButton(props){
   return (
-    <button onClick = { props.onClick } > login </button> //不太理解
+    <button onClick = { props.onClick } > login </button> //不太理解 ==> 参考demo2 组件的props
   )
 }
 

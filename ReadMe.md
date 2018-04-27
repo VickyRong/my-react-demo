@@ -3,7 +3,7 @@
 - [x] demo3---state & 生命周期
 - [x] demo4---事件处理
 - [x] demo5---条件渲染
-- [ ] demo6---列表 & Keys
+- [ ] demo6---列表 & Keys （有些疑问？）
 - [ ] demo7---表单
 - [ ] demo8---状态提升
 - [ ] demo9---组合 vs 继承

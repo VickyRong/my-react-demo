@@ -8,5 +8,6 @@
 - [ ] demo8---状态提升
 - [ ] demo9---组合 vs 继承
 - [ ] demo10---react理论
+- [ ] redux-todolist
 
 

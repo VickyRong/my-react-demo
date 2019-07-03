@@ -54,36 +54,36 @@ function NumberList(props) {
 }
   
 //用keys提取组件（2.正确写法）
-// function ListItem(props) {
-//     // 对啦！这里不需要指定key:
-//     return <li>{props.value}</li>;
-// }
+function ListItem(props) {
+    // 对啦！这里不需要指定key:
+    return <li>{props.value}</li>;
+}
   
-// function NumberList(props) {
-//     const numbers = props.numbers;
-//     const listItems = numbers.map((number) =>
-//         // 又对啦！key应该在数组的上下文中被指定
-//         <ListItem key={number.toString()} value={number} />
-//         );
-//         return (
-//             <ul>
-//             {listItems}
-//             </ul>
-//         );
-// }
+function NumberList(props) {
+    const numbers = props.numbers;
+    const listItems = numbers.map((number) =>
+        // 又对啦！key应该在数组的上下文中被指定
+        <ListItem key={number.toString()} value={number} />
+    );
+        return (
+            <ul>
+            {listItems}
+            </ul>
+        );
+}
 
-// function NumberList(props) {
-//     const numbers = props.numbers;
-//     return (
-//       <ul>
-//         {numbers.map((number) =>
-//           <ListItem key={number.toString()}
-//                     value={number} />
+function NumberList(props) {
+    const numbers = props.numbers;
+    return (
+      <ul>
+        {numbers.map((number) =>
+          <ListItem key={number.toString()}
+                    value={number} />
   
-//         )}
-//       </ul>
-//     );
-//   }
+        )}
+      </ul>
+    );
+  }
 
 const numbers = [1, 2, 3, 4, 5];
 ReactDOM.render(

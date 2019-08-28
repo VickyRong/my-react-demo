@@ -10,7 +10,6 @@ class App extends React.Component{
            <div>
                 <AddTodo/>
                 <VisibleTodoList/>
-                {/* <FooterFilter/> */}
            </div>
        )
    }

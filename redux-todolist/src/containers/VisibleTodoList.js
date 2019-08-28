@@ -4,6 +4,7 @@ import TodoList from '../components/TodoList'
 import { VisibilityFilters } from '../actions'
 
 const getVisibleTodos = (todos, filter) => {
+  console.log({filter})
   switch (filter) {
     case VisibilityFilters.SHOW_ALL:
       return todos
@@ -16,9 +17,17 @@ const getVisibleTodos = (todos, filter) => {
   }
 }
 
-const mapStateToProps = state => ({
-  todos: getVisibleTodos(state.todos, state.visibilityFilter)
-})
+// const mapStateToProps = state => ({
+//   todos: getVisibleTodos(state.todos, state.visibilityFilter)
+// })
+
+
+const mapStateToProps = state => {
+  console.log('获取state---~~~~~~',state)
+  return {
+    todos: getVisibleTodos(state.todos, state.visibilityFilter)
+  }
+}
 
 const mapDispatchToProps = dispatch => ({
   toggleTodo: id => dispatch(toggleTodo(id))

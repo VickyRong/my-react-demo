@@ -7,8 +7,6 @@ import rootReducer from './reducers'
 import { Provider } from 'react-redux'
 
 const store = createStore(rootReducer)
-console.log('-----',store.getState())
-
 
 ReactDom.render(
     <Provider store={store}>

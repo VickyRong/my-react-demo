@@ -11,7 +11,6 @@ class AddTodo extends React.Component{
         this.handleChange = this.handleChange.bind(this);
     }
 
-
     handleChange(e){
         let inputValue = e.target.value;
         this.setState({ inputValue})
@@ -19,8 +18,7 @@ class AddTodo extends React.Component{
 
     addTodo(){
         let { inputValue } = this.state;
-        console.log('添加')
-        console.log({inputValue})
+        if(inputValue.trim() === ''){ return; }
         this.props.dispatch(addTodo(inputValue))
         this.setState({ inputValue : ''})
     }

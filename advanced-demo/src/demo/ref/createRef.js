@@ -1,6 +1,6 @@
 import React,{ Component } from 'react';
 
-function vickyButton(props) {
+function CreateRef(props) {
   console.log('props:',props)
 
   // 这里必须声明 textInput，这样 ref 才可以引用它
@@ -15,7 +15,6 @@ function vickyButton(props) {
       <input
         type="text"
         ref={textInput} />
-
       <input
         type="button"
         value="聚焦input"
@@ -25,4 +24,4 @@ function vickyButton(props) {
     </div>
   );
 }
-export default vickyButton;
+export default CreateRef;
